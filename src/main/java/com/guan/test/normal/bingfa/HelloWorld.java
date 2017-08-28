@@ -30,4 +30,12 @@ public class HelloWorld
         System.out.println( cHashMap.get( key ) );
     }
 
+    @Test
+    public void test002()
+    {
+        // 获取cpu数量
+        int count = Runtime.getRuntime().availableProcessors();
+        System.out.println( count );
+    }
+
 }
