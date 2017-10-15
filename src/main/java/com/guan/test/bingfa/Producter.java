@@ -19,15 +19,15 @@ public class Producter implements Runnable
 
         try
         {
-            blockingQueue.put( "str1" );
-            System.out.println( "put value 1" );
-            Thread.sleep( 1000 );
-            blockingQueue.put( "str2" );
-            System.out.println( "put value 2" );
-            Thread.sleep( 1000 );
-            blockingQueue.put( "str3" );
-            System.out.println( "put value 3" );
-            Thread.sleep( 1000 );
+            int i = 0;
+            while ( true )
+            {
+                i++;
+                blockingQueue.put( "str" + i );
+                System.out.println( "put value " + i );
+                Thread.sleep( 100 );
+            }
+
         } catch ( InterruptedException e )
         {
 

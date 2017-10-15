@@ -1,7 +1,10 @@
 
 package com.guan.test.bingfa;
 
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
+
+import org.junit.Test;
 
 public class Automic implements Runnable
 {
